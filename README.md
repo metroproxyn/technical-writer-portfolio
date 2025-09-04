@@ -29,6 +29,9 @@ This portfolio showcases a curated collection of documentation samples created t
 ### 🤖 AI & Machine Learning
 (TBD)
 
+### 🛜 Networks and Protocols
+(TBD)
+
 ### 🛡️ Cybersecurity
 (TBD)
 
