@@ -24,7 +24,11 @@ This portfolio showcases a curated collection of documentation samples created t
 (TBD)
 
 ### 📱 User Assistance & UI Text
-(TBD)
+
+Here you will find examples of my work focused on enhancing user experience in the FinTech domain through clear documentation. One sample demonstrates original content creation, while the other showcases my analytical approach to revising and improving existing documentation.
+
+* [How to Send Money to a Friend Using Online Banking](UserGuide/add-edit-user-fix.md) — A step-by-step guide demonstrating task-based writing, proactive user assistance, and a strong emphasis on security best practices.
+* [User Manual Improvement](/UserGuide/fintech-mobile-bank-guide.md) — A redaction of a poorly structured manual, highlighting my skills in applying Microsoft Style Guide principles, information restructuring, and plain English editing.
 
 ### 🤖 AI & Machine Learning
 (TBD)
