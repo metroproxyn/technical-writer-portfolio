@@ -23,6 +23,10 @@ This portfolio showcases a curated collection of documentation samples created t
 ### 🌐 API & SDK Documentation
 (TBD)
 
+* [Task Manager API](/Users/alexmaszanski/Documents/GitHub/technical-writer-portfolio/task-manager-api/overview.md)
+
+* [Bookmark manager API]()
+
 ### 📱 User Assistance & UI Text
 
 Here you will find examples of my work focused on enhancing user experience in the FinTech domain through clear documentation. One sample demonstrates original content creation, while the other showcases my analytical approach to revising and improving existing documentation.
