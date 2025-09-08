@@ -1,8 +1,9 @@
 # Task Manager API Documentation
 
-The Task Manager API allows you to create, read, update, and delete tasks in a to-do list. This API is RESTful and uses JSON for data exchange.
+> **ℹ️ Portfolio Sample Notice**  
+> This is a **sample documentation project** created to demonstrate technical writing skills. The API, endpoints, and company described here are fictional. Any referenced links are for example purposes only.
 
-A clear and interactive API reference for a simple Task Manager service, demonstrating full OpenAPI integration and developer-friendly guides.
+The Task Manager API provides a simple yet powerful interface for creating, tracking, and organizing your tasks and projects. It supports full CRUD operations, filtering, sorting, and user collaboration.
 
 *   **Tools:** OpenAPI 3.1, Redoc, GitHub Actions.
 *   **Features:**
@@ -11,6 +12,67 @@ A clear and interactive API reference for a simple Task Manager service, demonst
     *   Code snippets in multiple programming languages.
     *   Error handling documentation.
 
-## Base URL
+## Explore the Documentation
 
-(TBD)
+* [Core Concepts](API/task-manager-api/concepts.md) – Authentication, rate limiting, pagination, and errors.
+* [Quick Start Guide](API/task-manager-api/quickstart.md) – Make your first API request in 5 minutes.
+* [API Reference](API/task-manager-api/reference/overview.md) – Detailed endpoint specification with live examples.
+* [Guides](API/task-manager-api/guides/search-filter.md) – Practical tutorials and common workflows.
+
+
+---
+
+## API Basics
+
+**Base URL:** `https://api.taskmanager.com/v1`
+
+**Authentication:** All requests require an API key sent in the `Authorization` header.
+```http
+Authorization: Bearer YOUR_API_KEY_HERE
+```
+[Learn about authentication →](/API/task-manager-api/concepts.md)
+
+**Data Format:** JSON for all request and response bodies.
+
+**Rate Limiting:** 100 requests per minute per API key.
+[See details →](./concepts.md#rate-limiting)
+
+---
+
+## 🚦 Get Started
+
+Ready to start? This example retrieves your user profile.
+
+1.  **Get your API Key:** [Sign up](https://app.taskmanager.com/signup) for a developer account.
+2.  **Authenticate your request:** Include your key in the header.
+3.  **Call the `/me` endpoint:**
+
+```bash
+curl -X GET "https://api.taskmanager.com/v1/me" \
+  -H "Authorization: Bearer YOUR_API_KEY_HERE"
+```
+
+[Follow the step-by-step Quick Start guide →](./quickstart.md)
+
+---
+
+## 📋 API Resources
+
+The API is built around a few main resources:
+
+| Resource | Description | Endpoint |
+| :--- | :--- | :--- |
+| **Task** | An individual to-do item | `/tasks` |
+| **Project** | A group of related tasks | `/projects` |
+| **Label** | A tag for categorizing tasks | `/labels` |
+| **User** | Profile and account information | `/me` |
+
+[View the full API Reference →](./reference/)
+
+---
+
+## 🛠️ SDKs & Tools
+
+*   **Official JavaScript SDK** – [GitHub Repository](https://github.com/example) *(Example link)*
+*   **Postman Collection** – [Download Collection](./assets/postman-collection.json) *(Example asset)*
+*   **OpenAPI Spec** – [View Specification](./openapi.yaml) – The source of truth for this API.
