@@ -21,11 +21,12 @@ My expertise lies in modern docs-as-code ecosystems and API documentation, suppo
 This portfolio showcases a curated collection of documentation samples created to demonstrate best practices across key domains. Each sample focuses on clarity, user empathy, and technical accuracy.
 
 ### 🌐 API & SDK Documentation
-(TBD)
 
-* [Task Manager API](/Users/alexmaszanski/Documents/GitHub/technical-writer-portfolio/task-manager-api/overview.md)
+Samples demonstrating my ability to design and document clear, developer-friendly REST APIs using the OpenAPI standard and a docs-as-code workflow.
 
-* [Bookmark manager API]()
+*   [Bookmark Manager API](API/bookmark-manager-api/overview.md) — A comprehensive API reference for a web bookmarking service, featuring interactive documentation, authentication guides, and code samples. Built with OpenAPI 3.1 and Redocly.
+
+*   [Task Manager API](API/task-manager-api/overview.md) — Complete documentation for a task management (to-do list) API, showcasing structured endpoints, detailed schema definitions, and workflow tutorials. Built with OpenAPI 3.1 and Redocly.
 
 ### 📱 User Assistance & UI Text
 
