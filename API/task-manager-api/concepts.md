@@ -158,4 +158,3 @@ Response:
 ---
 
 *This is a sample API documentation project for portfolio purposes. All company names, endpoints, and data are fictional.*
-```
