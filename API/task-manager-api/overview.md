@@ -14,11 +14,10 @@ The Task Manager API provides a simple yet powerful interface for creating, trac
 
 ## Explore the Documentation
 
-* [Core Concepts](/concepts.md) – Authentication, rate limiting, pagination, and errors.
+* [Core Concepts](API/task-manager-api/concepts.md) – Authentication, rate limiting, pagination, and errors.
 * [Quick Start Guide](API/task-manager-api/quickstart.md) – Make your first API request in 5 minutes.
 * [API Reference](API/task-manager-api/reference/overview.md) – Detailed endpoint specification with live examples.
 * [Guides](API/task-manager-api/guides/search-filter.md) – Practical tutorials and common workflows.
-
 
 ---
 
@@ -76,3 +75,7 @@ The API is built around a few main resources:
 *   **Official JavaScript SDK** – [GitHub Repository](https://github.com/example) *(Example link)*
 *   **Postman Collection** – [Download Collection](./assets/postman-collection.json) *(Example asset)*
 *   **OpenAPI Spec** – [View Specification](./openapi.yaml) – The source of truth for this API.
+
+---
+
+*This is a sample API documentation project for portfolio purposes. All company names, endpoints, and data are fictional.*
