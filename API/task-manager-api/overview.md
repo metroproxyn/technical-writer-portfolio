@@ -14,7 +14,7 @@ The Task Manager API provides a simple yet powerful interface for creating, trac
 
 ## Explore the Documentation
 
-* [Core Concepts](API/task-manager-api/concepts.md) – Authentication, rate limiting, pagination, and errors.
+* [Core Concepts](/concepts.md) – Authentication, rate limiting, pagination, and errors.
 * [Quick Start Guide](API/task-manager-api/quickstart.md) – Make your first API request in 5 minutes.
 * [API Reference](API/task-manager-api/reference/overview.md) – Detailed endpoint specification with live examples.
 * [Guides](API/task-manager-api/guides/search-filter.md) – Practical tutorials and common workflows.
