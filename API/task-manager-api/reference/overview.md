@@ -26,3 +26,28 @@ All successful API responses return a JSON object. The structure may vary by end
     ...
   }
 }
+```
+
+**List of Resources:**
+```json
+{
+  "data": [
+    { "id": 123, ... },
+    { "id": 456, ... }
+  ],
+  "meta": {
+    "per_page": 20,
+    "page": 1,
+    "total_count": 2
+  }
+}
+```
+**Error Response:**
+```json
+{
+  "error": {
+    "code": "invalid_request",
+    "message": "The 'title' parameter is required."
+  }
+}
+```
