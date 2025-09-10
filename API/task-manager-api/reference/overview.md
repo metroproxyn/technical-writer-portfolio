@@ -4,9 +4,9 @@ This section provides detailed documentation for all available API endpoints. Ex
 
 ## Core Resources
 
-*   **[Tasks](API/task-manager-api/reference/tasks.md)** – Manage your to-do items. Create, read, update, delete, and filter tasks.
-*   **[Projects](API/task-manager-api/reference/projects.md)** – Organize tasks into projects for better structure.
-*   **[Labels](API/task-manager-api/reference/labels.md)** – Categorize and filter tasks using custom labels.
+-   **[Tasks](eference/tasks.md)** – Manage your to-do items. Create, read, update, delete, and filter tasks.
+-   **[Projects](reference/projects.md)** – Organize tasks into projects for better structure.
+-   **[Labels](reference/labels.md)** – Categorize and filter tasks using custom labels.
 
 ## System Endpoints 
 (TBD)
