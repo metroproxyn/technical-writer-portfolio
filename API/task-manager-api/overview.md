@@ -14,10 +14,10 @@ The Task Manager API provides a simple yet powerful interface for creating, trac
 
 ## Explore the Documentation
 
-* [Core Concepts](API/task-manager-api/concepts.md) – Authentication, rate limiting, pagination, and errors.
-* [Quick Start Guide](API/task-manager-api/quickstart.md) – Make your first API request in 5 minutes.
-* [API Reference](API/task-manager-api/reference/overview.md) – Detailed endpoint specification with live examples.
-* [Guides](API/task-manager-api/guides/search-filter.md) – Practical tutorials and common workflows.
+* [Core Concepts](concepts.md) – Authentication, rate limiting, pagination, and errors.
+* [Quick Start Guide](quickstart.md) – Make your first API request in 5 minutes.
+* [API Reference](Aoverview.md) – Detailed endpoint specification with live examples.
+* [Guides](guides/search-filter.md) – Practical tutorials and common workflows.
 
 ---
 
@@ -29,12 +29,12 @@ The Task Manager API provides a simple yet powerful interface for creating, trac
 ```http
 Authorization: Bearer YOUR_API_KEY_HERE
 ```
-[Learn about authentication →](/API/task-manager-api/concepts.md)
+[Learn about authentication →](concepts.md)
 
 **Data Format:** JSON for all request and response bodies.
 
 **Rate Limiting:** 100 requests per minute per API key.
-[See details →](./concepts.md#rate-limiting)
+[See details →](.сoncepts.md#rate-limiting)
 
 ---
 
@@ -51,7 +51,7 @@ curl -X GET "https://api.taskmanager.com/v1/me" \
   -H "Authorization: Bearer YOUR_API_KEY_HERE"
 ```
 
-[Follow the step-by-step Quick Start guide →](./quickstart.md)
+[Follow the step-by-step Quick Start guide →](quickstart.md)
 
 ---
 
