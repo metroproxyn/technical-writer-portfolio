@@ -38,7 +38,7 @@ Authorization: Bearer YOUR_API_KEY_HERE
 
 ---
 
-## 🚦 Get Started
+## Get Started
 
 Ready to start? This example retrieves your user profile.
 
@@ -55,7 +55,7 @@ curl -X GET "https://api.taskmanager.com/v1/me" \
 
 ---
 
-## 📋 API Resources
+## API Resources
 
 The API is built around a few main resources:
 
@@ -70,7 +70,7 @@ The API is built around a few main resources:
 
 ---
 
-## 🛠️ SDKs & Tools
+## SDKs & Tools
 
 *   **Official JavaScript SDK** – [GitHub Repository](https://github.com/example) *(Example link)*
 *   **Postman Collection** – [Download Collection](./assets/postman-collection.json) *(Example asset)*

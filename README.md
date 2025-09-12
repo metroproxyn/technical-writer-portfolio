@@ -24,15 +24,16 @@ This portfolio showcases a curated collection of documentation samples created t
 
 Samples demonstrating my ability to design and document clear, developer-friendly REST APIs using the OpenAPI standard and a docs-as-code workflow.
 
-*   [Bookmark Manager API](API/bookmark-manager-api/overview.md) — A comprehensive API reference for a web bookmarking service, featuring interactive documentation, authentication guides, and code samples. Built with OpenAPI 3.1 and Redocly.
-
 *   [Task Manager API](API/task-manager-api/overview.md) — Complete documentation for a task management (to-do list) API, showcasing structured endpoints, detailed schema definitions, and workflow tutorials. Built with OpenAPI 3.1 and Redocly.
+
+*   [Bookmark Manager API](API/bookmark-manager-api/overview.md) — A comprehensive API reference for a web bookmarking service, featuring interactive documentation, authentication guides, and code samples. Built with OpenAPI 3.1 and Redocly.
 
 ### 📱 User Assistance & UI Text
 
 Here you will find examples of my work focused on enhancing user experience in the FinTech domain through clear documentation. One sample demonstrates original content creation, while the other showcases my analytical approach to revising and improving existing documentation.
 
 * [How to Send Money to a Friend Using Online Banking](UserGuide/add-edit-user-fix.md) — A step-by-step guide demonstrating task-based writing, proactive user assistance, and a strong emphasis on security best practices.
+
 * [User Manual Improvement](/UserGuide/fintech-mobile-bank-guide.md) — A redaction of a poorly structured manual, highlighting my skills in applying Microsoft Style Guide principles, information restructuring, and plain English editing.
 
 ### 🤖 AI & Machine Learning
