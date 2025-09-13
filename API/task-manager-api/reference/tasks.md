@@ -124,7 +124,7 @@ curl -X POST "https://api.taskmanager.com/v1/tasks" \
 
 ## Retrieve a task
 
-To retrieve a task, you need to gets a specific task by its ID.
+To retrieve a task, you need to get a specific task by its ID.
 
 ```http
 GET /tasks/{id}
@@ -241,5 +241,7 @@ This endpoint may return the following errors:
 | 400 | `validation_error` | The request body contains invalid data. |
 | 403 | `forbidden` | You don't have permission to access this task. |
 | 404 | `not_found` | The specified task could not be found. |
+
+---
 
 *This is a sample API documentation project for portfolio purposes. All company names, endpoints, and data are fictional.*
