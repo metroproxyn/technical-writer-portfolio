@@ -124,7 +124,7 @@ curl -X POST "https://api.taskmanager.com/v1/tasks" \
 
 ## Retrieve a task
 
-To retrieve a task, you need to get a specific task by its ID.
+To retrieve a task, you need to specify this by its ID.
 
 ```http
 GET /tasks/{id}
