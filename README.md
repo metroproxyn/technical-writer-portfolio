@@ -26,8 +26,6 @@ Samples demonstrating my ability to design and document clear, developer-friendl
 
 *   [Task Manager API](API/task-manager-api/overview.md) — Complete documentation for a task management (to-do list) API, showcasing structured endpoints, detailed schema definitions, and workflow tutorials. Built with OpenAPI 3.1 and Redocly.
 
-*   [Bookmark Manager API](API/bookmark-manager-api/overview.md) — A comprehensive API reference for a web bookmarking service, featuring interactive documentation, authentication guides, and code samples. Built with OpenAPI 3.1 and Redocly.
-
 ### 📱 User Assistance & UI Text
 
 Here you will find examples of my work focused on enhancing user experience in the FinTech domain through clear documentation. One sample demonstrates original content creation, while the other showcases my analytical approach to revising and improving existing documentation.
@@ -36,17 +34,16 @@ Here you will find examples of my work focused on enhancing user experience in t
 
 * [User Manual Improvement](/UserGuide/fintech-mobile-bank-guide.md) — A redaction of a poorly structured manual, highlighting my skills in applying Microsoft Style Guide principles, information restructuring, and plain English editing.
 
+### ☁️🛡️ Cloud Security
+
+- [How-To Guide: Securing Your AWS Account with IAM Best Practices](CloudSecurity/cloud-security-iam-guide.md)
+  - **Type:** Procedural Guide (How-To)
+  - **Description:** A step-by-step guide on applying fundamental security principles to AWS Identity and Access Management (IAM), including creating a secure administrative user and enforcing the principle of least privilege.
+
 ### 🤖 AI & Machine Learning
 (TBD)
 
 ### 🔋 Network Protocols & Infrastructure
 (TBD)
-
-### ☁️ Cloud & DevOps
-(TBD)
-
-### 🛡️ Cybersecurity
-(TBD)
-
 
 *This portfolio is a living document and is continually updated with new examples and domains I am exploring.*
