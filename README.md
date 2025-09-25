@@ -36,9 +36,13 @@ Here you will find examples of my work focused on enhancing user experience in t
 
 ### ☁️🛡️ Cloud Security
 
-- [How-To Guide: Securing Your AWS Account with IAM Best Practices](CloudSecurity/cloud-security-iam-guide.md)
+- [How-To Guide: Securing Your AWS Account with IAM Best Practices](CloudSecurity/how-to-secure-aws-iam.md)
   - **Type:** Procedural Guide (How-To)
   - **Description:** A step-by-step guide on applying fundamental security principles to AWS Identity and Access Management (IAM), including creating a secure administrative user and enforcing the principle of least privilege.
+
+- [Troubleshooting Guide: Resolving 'Access Denied' to a Cloud Storage Bucket](CloudSecurity/troubleshooting-s3-access-denied-guide.md)
+  - **Type:** Troubleshooting Guide
+  - **Description:** A detailed diagnostic flow for security analysts and cloud engineers to resolve common "Access Denied" errors for S3 buckets. This guide covers checking IAM policies, bucket policies, and SCPs, and includes a visual flowchart for quick reference.
 
 ### 🤖 AI & Machine Learning
 (TBD)
