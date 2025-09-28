@@ -42,12 +42,12 @@ In this section, we will create a new IAM user with administrative privileges an
 
 ### Step 2: Navigate to the IAM Dashboard
 1.  In the top search bar, type `IAM` and press Enter.
-2.  Select the **IAM** service from the search results.
+2.  Select the IAM service from the search results.
 
 ### Step 3: Create a New IAM User
 1.  In the IAM navigation pane on the left, click **Users**.
 2.  Click the **Add users** button.
-3.  In the **User name** field, enter a descriptive name (e.g., `primary-admin`).
+3.  In the "User name" field, enter a descriptive name (e.g., `primary-admin`).
 4.  Under "Select AWS credential type," check the box for **AWS Management Console access**.
 5.  Select the **Custom password** option and enter a strong, secure password.
 6.  **Important:** Uncheck the box for "User must create a new password at next sign-in." This is because you are creating this account for your own use.
@@ -56,28 +56,28 @@ In this section, we will create a new IAM user with administrative privileges an
 ### Step 4: Assign Administrative Permissions
 1.  On the "Set permissions" page, select **Attach existing policies directly**.
 2.  In the policy filter search box, type `AdministratorAccess`.
-3.  Check the box next to the **AdministratorAccess** policy. This policy grants full access to AWS services and resources.
+3.  Check the box next to the AdministratorAccess policy. This policy grants full access to AWS services and resources.
 4.  Click **Next: Tags**. Tags are optional, so you can skip this for now by clicking **Next: Review**.
 
 ### Step 5: Review and Create the User
 1.  Review the user details and permissions to ensure everything is correct.
 2.  Click the **Create user** button.
-3.  You will see a success message. **Copy the Console sign-in link** provided on this page. This is a unique URL for your account's users to sign in. Save it in a safe place.
+3.  You will see a success message. Copy the Console sign-in link provided on this page. This is a unique URL for your account's users to sign in. Save it in a safe place.
 
 ### Step 6: Enable Multi-Factor Authentication (MFA)
-1.  **Sign out** of the AWS console from your root user account.
+1.  Sign out of the AWS console from your root user account.
 2.  Use the special sign-in link you just saved to log in as your new IAM user (`primary-admin`).
-3.  After logging in, navigate back to the **IAM** service.
+3.  After logging in, navigate back to the IAM service.
 4.  In the top right corner, click on your username (`primary-admin@<your-account-id>`) and select **"Security credentials"** from the dropdown menu.
 5.  In the "Multi-Factor Authentication (MFA)" section, click **Assign MFA device**.
 6.  Enter a name for the device (e.g., `my-phone-authenticator`).
 7.  Select **Authenticator app** and click **Next**.
 8.  A QR code will be displayed. Open a virtual authenticator app on your smartphone (like Google Authenticator or Authy), and scan the code.
-9.  The app will generate two consecutive MFA codes. Enter them in the **MFA code 1** and **MFA code 2** fields.
+9.  The app will generate two consecutive MFA codes. Enter them in the "MFA code 1" and "MFA code 2" fields.
 10. Click **Add MFA**.
 
 ## Conclusion
 
 Congratulations! You have successfully created a new administrative IAM user and secured it with MFA. You have also learned about the core principles of IAM security.
 
-From now on, you should **only use this new IAM user** for your administrative tasks and store your root user credentials in a highly secure location, using them only for absolute emergencies or specific account management operations that require them. This simple practice dramatically improves the security posture of your entire AWS account.
+From now on, you should only use this new IAM user for your administrative tasks and store your root user credentials in a highly secure location, using them only for absolute emergencies or specific account management operations that require them. This simple practice dramatically improves the security posture of your entire AWS account.
