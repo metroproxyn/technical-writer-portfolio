@@ -1,6 +1,7 @@
 # How-To Guide: Securing Your AWS Account with IAM Best Practices
 
 **Audience:** Cloud Administrators, DevOps Engineers, and anyone responsible for AWS account security.
+
 **Goal:** This guide explains the fundamental best practices for AWS Identity and Access Management (IAM) and provides a step-by-step procedure for creating a secure administrative user, ensuring you no longer need to use your high-privilege root account for daily tasks.
 
 ## Introduction

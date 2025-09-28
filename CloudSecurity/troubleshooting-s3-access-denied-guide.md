@@ -49,7 +49,7 @@ graph TD
 
 ## Step-by-Step Diagnosis and Resolution
 
-### 1\. Verify IAM User/Group Permissions
+### 1. Verify IAM User/Group Permissions
 
 The first step is to confirm that the IAM user or group performing the action has the necessary permissions attached.
 
@@ -66,7 +66,7 @@ The first step is to confirm that the IAM user or group performing the action ha
   * **Policy exists but is incorrect:** The policy might be too restrictive. Check the `Action` and `Resource` sections. A policy allowing `"s3:GetObject"` on `"arn:aws:s3:::shieldlock-bucket-name/*"` is needed for read access.
   * **Policy is correct:** Proceed to the next step.
 
-### 2\. Check the S3 Bucket Policy
+### 2. Check the S3 Bucket Policy
 
 The bucket itself might have a resource-based policy that explicitly denies your account or user, overriding any IAM user policies.
 
@@ -87,7 +87,7 @@ Modify the bucket policy to include a statement that allows your user/account. F
 
 ```json
 {
-    "Version": "2012-10-17",
+    "Version": "2024-10-17",
     "Statement": [
         {
             "Effect": "Allow",
@@ -101,14 +101,14 @@ Modify the bucket policy to include a statement that allows your user/account. F
 }
 ```
 
-### 3\. Investigate Service Control Policies (SCPs)
+### 3. Investigate Service Control Policies (SCPs)
 
 If your account is part of an AWS Organization, a Service Control Policy (SCP) might be blocking access at the organizational unit (OU) or entire account level. SCPs act as a security guardrail and can override local IAM and bucket policies.
 
 **Action:**
 This step typically requires organizational administrator privileges. **Contact your Cloud Security or Infrastructure team.** Ask them to verify if there are any SCPs attached to your account's OU that have an explicit **`"Deny"`** for S3 actions.
 
-### 4\. Verify AWS CLI Configuration and Credentials
+### 4. Verify AWS CLI Configuration and Credentials
 
 If you are encountering the error only in the CLI, the issue might be with your local configuration.
 
