@@ -25,6 +25,7 @@ This portfolio showcases a curated collection of documentation samples created t
 Samples demonstrating my ability to design and document clear, developer-friendly REST APIs using the OpenAPI standard and a docs-as-code workflow.
 
 *   [Task Manager API](API/task-manager-api/overview.md) — Complete documentation for a task management (to-do list) API, showcasing structured endpoints, detailed schema definitions, and workflow tutorials. Built with OpenAPI 3.1 and Redocly.
+*   [Network API (CAMARA)](API/network-api/overview.md) – TBD
 
 ### 📱 User Assistance & UI Text
 
