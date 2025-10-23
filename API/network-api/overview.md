@@ -27,3 +27,13 @@ This documentation project covers the following APIs:
 Each section includes conceptual guides, how-to tutorials, and a full OpenAPI reference.
 
 ## Getting Started: Authentication
+
+All Network APIs are secured using **OAuth 2.0 (Client Credentials Flow)**. To make your first call, you must obtain an access token. Follow these steps to do so:
+
+1.  **Get Your Credentials:** Obtain your `CLIENT_ID` and `CLIENT_SECRET` from the developer portal.
+2.  **Request a Token:** Make a `POST` request to the `/token` endpoint with your credentials.
+3.  **Use the Token:** Include the returned `access_token` in the `Authorization` header of all your API requests as a Bearer token.
+
+`Authorization: Bearer <YOUR_ACCESS_TOKEN>`
+
+For a detailed walkthrough, refer to the **[Authentication Guide](./authentication.md)** topic.
