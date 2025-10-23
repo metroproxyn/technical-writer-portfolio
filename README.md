@@ -25,7 +25,7 @@ This portfolio showcases a curated collection of documentation samples created t
 Samples demonstrating my ability to design and document clear, developer-friendly REST APIs using the OpenAPI standard and a docs-as-code workflow.
 
 *   [Task Manager API](API/task-manager-api/overview.md) — Complete documentation for a task management (to-do list) API, showcasing structured endpoints, detailed schema definitions, and workflow tutorials. Built with OpenAPI 3.1 and Redocly.
-*   [Network API (CAMARA)](API/network-api/overview.md) – TBD
+*   [Network API (CAMARA)](API/network-api/overview.md) A documentation portal for key GSMA Open Gateway (CAMARA) APIs Demonstrates documenting security-focused (SIM Swap) and verification (Number Verification) APIs, blending conceptual "why" guides with precise OpenAPI specifications. Built with Docusaurus, showcasing a full docs-as-code workflow.
 
 ### 📱 User Assistance & UI Text
 
