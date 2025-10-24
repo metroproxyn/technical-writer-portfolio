@@ -1,0 +1,119 @@
+# sim-swap.openapi.yaml
+openapi: 3.1.0
+info:
+  title: SIM Swap API
+  version: v1
+  description: >
+    Provides a standardized (CAMARA) mechanism to check if a SIM card 
+    has been recently swapped, helping to prevent account takeover (ATO) fraud.
+  contact:
+    name: Aleks Mashanski
+    url: https://github.com/metroproxyn
+
+# Define the server(s) this API is hosted on
+servers:
+  - url: https://api.network.com
+    description: Production Server
+
+# Define security mechanisms (we use OAuth2 Client Credentials)
+components:
+  securitySchemes:
+    oAuth2ClientCredentials:
+      type: oauth2
+      description: >
+        OAuth 2.0 Client Credentials flow for server-to-server authentication.
+        See [Authentication Guide](./authentication.md).
+      flows:
+        clientCredentials:
+          tokenUrl: /oauth/token
+          scopes: {} # Scopes can be defined here if needed
+
+  # Define reusable data models (schemas)
+  schemas:
+    SimSwapCheckRequest:
+      type: object
+      description: The request body for a SIM swap check.
+      properties:
+        phoneNumber:
+          type: string
+          description: The phone number to check in E.164 format.
+          example: "+34612345678"
+        maxAgeHours:
+          type: integer
+          description: >
+            The lookback period in hours to check for a swap.
+          example: 24
+          default: 24
+      required:
+        - phoneNumber
+
+    SimSwapCheckResponse:
+      type: object
+      description: The result of a successful SIM swap check.
+      properties:
+        swapped:
+          type: boolean
+          description: >
+            `true` if a swap was detected within the specified time window, 
+            `false` otherwise.
+          example: false
+
+    ErrorResponse:
+      type: object
+      description: A standard error response.
+      properties:
+        error:
+          type: string
+          description: A short code for the error.
+          example: "INVALID_PHONE_NUMBER"
+        message:
+          type: string
+          description: A human-readable description of the error.
+          example: "Phone number must be in E.164 format."
+      required:
+        - error
+        - message
+
+# Apply security globally to all endpoints
+security:
+  - oAuth2ClientCredentials: []
+
+# Define the API paths (endpoints)
+paths:
+  /sim-swap/v1/check:
+    post:
+      summary: Check SIM Swap Status
+      description: >
+        Verifies if a SIM swap has occurred for a given phone number 
+        within a specified time window.
+      operationId: checkSimSwap
+      tags:
+        - Security
+      requestBody:
+        description: The phone number and lookback period to check.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SimSwapCheckRequest"
+      responses:
+        '200':
+          description: "Successful check. Returns the swap status."
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SimSwapCheckResponse"
+        '400':
+          description: "Bad Request. The request body is invalid (e.g., bad format)."
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        '401':
+          description: "Unauthorized. The access token is missing or invalid."
+        '404':
+          description: "Not Found. The phone number was not found or is not subscribed."
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
